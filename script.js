@@ -7,9 +7,9 @@ console.log(randomNumbers);
 const guess = document.getElementById("guess");
 const submit = document.getElementById("submit");
 const text = document.getElementById("resultText");
-const attemptsText = document.getElementById("attempts"); // Buradaki hatayı düzelttik.
+const attemptsText = document.getElementById("attempts")
 const restartButton = document.getElementById("restart");
-console.log(guess, submit);
+// console.log(guess, submit);
 
 
 function checkGuess() {
@@ -36,7 +36,7 @@ function checkGuess() {
 
     attemptsText.textContent = "Attempts: " + attempts;
 
-      // Tahmin kutusunu temizle
+      //clean the input
       guess.value = "";
 }
 
@@ -49,6 +49,6 @@ restartButton.addEventListener("click", function() {
     console.log(randomNumbers);  
     text.textContent = ""; 
     attemptsText.textContent = ""; 
-    guess.value = ""; // Tahmin kutusunu temizle
+    guess.value = "";
     gameOver = false; 
 });
